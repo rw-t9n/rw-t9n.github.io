@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<link rel="canonical" href="https://ludeon.com/forums/index.php?topic=52072.0">
+		<title>To all translators: TKeys</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="../static/ga4.js"></script>
+	</head>
+	<body>
+		<p>Original topic: <a href="https://ludeon.com/forums/index.php?topic=52072.0">https://ludeon.com/forums/index.php?topic=52072.0</a> | Retrieved November 11, 2026</p>
+		<h1 id="title">Ludeon Forums</h1>
+		<h2 id="linktree">RimWorld =&gt; Mods =&gt; Translations =&gt; Topic started by: Kenneth on May 12, 2020, 11:27:24 AM</h2>
+		<div id="posts">
+			<div class="postheader">
+				Title: <strong>To all translators: TKeys</strong><br>
+				Post by: <strong>Kenneth</strong> on <strong>May 12, 2020, 11:27:24 AM</strong>
+			</div>
+			<div class="postbody">
+				Hey,<br><br>We've just implemented a new feature called "TKey".<br>With TKeys we and modders are able to attribute XML elements with a key that can be used to address them directly in translations.<br><br>Currently, when translating a quest text you have to access paths like "&lt;PawnLend.root.nodes.RandomNode.nodes.Sequence-0.nodes.Set.value.slateRef&gt;".<br>This makes translations XML hard to understand and it's very likely that this string will break as soon as we change something on this quest.<br><br>With TKey's you can now address the same data using a much shorter and less likely to break path like this "&lt;PawnLend.LetterTextReturnAfterHelping.slateRef&gt;".<br>The translation report generator will suggest using the TKey paths and the translation files cleaner will even automatically update your already existing language data for you to use TKeys!<br><br>Any XML element in the game data can be attributed with TKey="[TKEY]", which will make it addressable using "[DefName].[TKey]".<br>We've added TKey's to all quest script and tip set defs, and will possibly expand this in the future.<br><br>A&nbsp; build with the TKey system included will go live today (on unstable branch).<br>In case you got questions or have issues with it, please join our public testing discord (https://discord.gg/FYBsdNX) - feel free to tell us in #translations channel and ping me (@Kenneth).<br>You can also send me a direct message on the forums or discuss in this thread.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: To all translators: TKeys</strong><br>
+				Post by: <strong>Ragnar-F</strong> on <strong>May 19, 2020, 09:18:59 AM</strong>
+			</div>
+			<div class="postbody">
+				When generating a translation report, following TKey system errors are included:<br><div class="codeheader"><span class="code floatleft">Code</span> <a class="codeoperation smf_select_text">Select</a> <a class="codeoperation smf_expand_code hidden" data-shrink-txt="Shrink" data-expand-txt="Expand">Expand</a></div><code class="bbc_code">========== TKey system errors (2) ==========<br>Duplicate TKey: Hospitality_Util_Worker.LetterLabelQuestCompleted -&gt; NEW=Hospitality_Util_Worker.root.nodes.32.node.node.nodes.2.node.nodes.0.label | OLDHospitality_Util_Worker.root.nodes.32.node.node.nodes.1.node.nodes.0.label - Ignoring old<br>Duplicate TKey: Hospitality_Util_Worker.LetterLabelQuestFailed -&gt; NEW=Hospitality_Util_Worker.root.nodes.33.node.nodes.0.label | OLDHospitality_Util_Worker.root.nodes.30.elseNode.node.nodes.0.label - Ignoring old</code>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: To all translators: TKeys</strong><br>
+				Post by: <strong>Kenneth</strong> on <strong>May 21, 2020, 08:10:43 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Ragnar-F on May 19, 2020, 09:18:59 AM</cite><br>When generating a translation report, following TKey system errors are included:<br><div class="codeheader"><span class="code floatleft">Code</span> <a class="codeoperation smf_select_text">Select</a> <a class="codeoperation smf_expand_code hidden" data-shrink-txt="Shrink" data-expand-txt="Expand">Expand</a></div><code class="bbc_code">========== TKey system errors (2) ==========<br>Duplicate TKey: Hospitality_Util_Worker.LetterLabelQuestCompleted -&gt; NEW=Hospitality_Util_Worker.root.nodes.32.node.node.nodes.2.node.nodes.0.label | OLDHospitality_Util_Worker.root.nodes.32.node.node.nodes.1.node.nodes.0.label - Ignoring old<br>Duplicate TKey: Hospitality_Util_Worker.LetterLabelQuestFailed -&gt; NEW=Hospitality_Util_Worker.root.nodes.33.node.nodes.0.label | OLDHospitality_Util_Worker.root.nodes.30.elseNode.node.nodes.0.label - Ignoring old</code><br></blockquote><br>Thanks for reporting, the next unstable build should fix this. We've changed some TKeys in Hospitality_Util_Worker.
+			</div><!-- .postbody -->
+		</div><!-- #posts -->
+	
+</body></html>

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<link rel="canonical" href="https://ludeon.com/forums/index.php?topic=2933.0">
+		<title>How to contribute</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="../static/ga4.js"></script>
+	</head>
+	<body>
+		<p>Original topic: <a href="https://ludeon.com/forums/index.php?topic=2933.0">https://ludeon.com/forums/index.php?topic=2933.0</a> | Retrieved November 11, 2026</p>
+		<h1 id="title">Ludeon Forums</h1>
+		<h2 id="linktree">RimWorld =&gt; Mods =&gt; Translations =&gt; Topic started by: Tynan on April 11, 2014, 09:43:08 AM</h2>
+		<div id="posts">
+			<div class="postheader">
+				Title: <strong>How to contribute</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>April 11, 2014, 09:43:08 AM</strong>
+			</div>
+			<div class="postbody">
+				This page has info on how people can contribute to the fan-made RimWorld translations. Thank you very much for taking an interest!<br><br>How it works: We keep the translations on a popular public collaboration website called GitHub, on the <a href="https://github.com/Ludeon">Ludeon GitHub page</a>. GitHub works through a program called <i>Git</i>, which is used to manage <i>repositories</i> of data. Git tracks each change made to the repository, so you can see what's changed, when it changed, and what was there before. It makes it easy to understand who has done what, and remove mistakes.<br><br>When Ludeon releases a new version of the game, we pull all the data from the GitHub repositories for each language and include it with the main game. So any translation work you do will be available to everyone as soon as the game is updated.<br><br><b>IMPORTANT LICENSE INFO: These projects are officially-supported fan translations of RimWorld. Ludeon may include content derived from these projects in official releases of RimWorld without owing money or credit to anyone (though you can put your credits into your translations info and will appear in the main game's credits listing). By contributing to these projects you agree to give Ludeon a nonexclusive transferable perpetual worldwide license to use your contributed content in any way in any product, with or without credits, without any compensation except for the satisfaction of the work and community. If your content is in any of these repos and you don't wish these terms to apply to you, contact me immediately at tynan.sylvester@gmail.com.</b><br><br><u><b>How to contribute</b></u><br><ul class="bbc_list" style="list-style-type: decimal;"><br><li>Download Git from <a href="https://git-scm.com/downloads">this page</a> and install it.</li><li>Go to https://github.com/Ludeon and navigate into the page for your project.</li><li>Copy the URL of the language project page. For example, if it's French, it'll be <a href="https://github.com/Ludeon/RimWorld-fr">https://github.com/Ludeon/RimWorld-fr</a></li><li>Open the command line on your computer (<a href="https://www.google.com/search?q=how+to+open+command+prompt">here's how</a>), navigate to the folder where you want to keep your translation files. Then type "git clone", then a space, then paste in the URL you copied before. Press ENTER to run the command. This will clone the repository to your computer. <a href="https://help.github.com/articles/cloning-a-repository/">More help on this.</a></li><li>Download and install <a href="https://code.visualstudio.com/download">Visual Studio Code</a>. Despite the name, this is not just for code. This is a free lightweight text editor with direct Git integration.</li><li>Use Visual Studio Code to open the folder you cloned. You can now editing the translation files on your computer! You can even commit changes to the repository right in VSCode, without using the command line. This modifies the repository on your computer, but doesn't affect the repository on GitHub. To upload your changes to the repository on GitHub, you need to do more.<br><br><u><b>Get set up to contribute to the central GitHub repository:</b></u><br><br></li><li>Create a user on GitHub.com.</li><li>Email support pro Michael at support@ludeon.com telling him the language and your GitHub user name. He will give you access to the appropriate GitHub repo.</li><li>Work with the other translators through GitHub and the forum page to improve the translation. Remember it's a team effort; sometimes people have different opinions on the best way to translate, so please be ready to collaborate with others.</li><li>Create a forum account on this forum.</li><li>Go to the appropriate forum page for your language (listed <a href="https://ludeon.com/forums/index.php?board=17.0">here</a>) and make a post introducing yourself to the other translators.<br><br>The game has a tool that inserts the original English data in comments in the files and creates "TODO" stubs for every necessary translation automatically. It is <i>extremely </i>useful. If you don't see an "EN:" comment with the original English data above each translation in your translation files, nobody has run the translation cleaner tool yet. You'll need to integrate the files into RimWorld as described and run the tool to update the files for translation.<br><br><u><b>Integrate your working files into RimWorld so you can test:</b></u><br><br></li><li>Download the version of RimWorld you want to translate, through Steam or your DRM-free download link (you'll need to own the game).</li><li>If you're working with the Steam version, you need to copy the RimWorld files, otherwise Steam may overwrite the changes you make to the translation. Find the RimWorld folder in your Steam installation. It'll be on a path similar to this:<br><br><b>C:\Program Files (x86)\Steam\steamapps\common\RimWorld</b><br><br>Copy that folder, and paste it in another folder on your PC (like C:/Translation/RimWorld).</li><li>Delete the translation from your copied installation of RimWorld.</li><li>Move your cloned Git translation folder into its place and change its name to match.</li><li>You can now start your copied version of RimWorld and test your translation, pull changes from Git continuously. Note that if the game gets updated, you'll need to repeat this process.</li><li>Start your copied version of RimWorld. Select your language on the main menu.</li><li>On the main menu, in the bottom left translation info window, click the "Translation cleanup" button. This updates all the translations files to the latest English data format, and inserts the original English text into comments you can reference while translating.<br></li><li>On the main menu, in the bottom left translation info window, click the "translation report" button. This produces a text file with info on the translation and what it needs.</li><br></ul><br><u><b>Useful info:</b></u><br><br>There's a English translation available here for reference. This has all the game data in it, in English, ready to be translated to other languages. You can copy the XML over and translate it in-place. <a href="https://git.io/vD8Cj">Link to English translation on GitHub</a>. Thanks to forum user duduluu for maintaining it.<br><br>Duduluu also created a translation tool called <a href="https://ludeon.com/forums/index.php?topic=30949.0">RimTrans</a>.<br><br>Core language files are stored in (GameFolder)/Data/Core/Languages. The original English data is in (GameFolder)/Data/Core/Languages/English.<br><br>Metadata: Translations have metadata that gives them a name and flag.<br>--- Create a FriendlyName.txt which contains the name of your language in your language (e.g. Italiano not Italian).<br>--- Create a flag image in PNG format, 128x64 pixels, called LangIcon.png. See other languages for reference.<br><br>There are four kinds of translation in RimWorld:<br><ul class="bbc_list" style="list-style-type: decimal;"><br><li>Keyed translations are used by the game with their "key". e.g. the game wants to show the game-over message, so it looks up the string with the key "GameOverMessage" in the currently-selected language and displays that.</li><li>DefInjected translations are different. These work by modifying the core "defs" that define every item, faction, storyteller, skill, and so on. They are data that is "injected" directly into the def data that the game runs on. These are translated by creating a DefInjected folder in your language folder. The en-US language folder lacks one of these because all the original def data is in English so no English data needs to be injected. However, you can see examples from other languages like German.</li><li>Backstories translations are used to translate character childhood and adulthood backstories.</li><li>Strings translations are files full of simple lists of "strings" of words. These are used when randomly assembling text, as in art descriptions.</li></ul><br>To translate DefInjected stuff, you'll have to look through the various defs in (GameFolder)/Mods/Core/Defs and create translations for each field of each def that you want to change in your language. The basic format is &lt;defName.fieldName&gt;, where defName is the defName of the def you want to inject into, and fieldName is the name of the field. So, for example, if you want to modify the label of wood, you'd write &lt;Wood.label&gt;Bois&lt;/Wood.label&gt;. This would change the label of wood to "Bois". For more complex structures like lists, there are other formats to use described <a href="41942.htm">here</a>.<br><br>Be sure to save your translation files with UTF-8 encoding, or special characters won't show up properly in-game.<br><br>Do not leave copies of game data in your translation repo. We don't want to ship a bunch of copies of useless game data, and it will produce errors when the translation is used in-game.<br><br>To help with updating translations, translator WMP wrote a tool that finds the difference between two translations. Run it with another more mature translation (or with the English data) and it can show you what tags you still need to translate. Find it <a href="https://github.com/WMP/RimWorld-translatescript">here</a>.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Neone</strong> on <strong>April 11, 2014, 10:52:31 AM</strong>
+			</div>
+			<div class="postbody">
+				I started working on translation to Polish. 
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Keinos</strong> on <strong>April 11, 2014, 10:54:44 AM</strong>
+			</div>
+			<div class="postbody">
+				Hello! Here one user that SUPER EXCITED about version A3 has been released. <br>By the way, I am really into translating also want to translate to my own language.<br>So if it's possible, could you let me get in to the test group?<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Tarrke</strong> on <strong>April 11, 2014, 03:54:36 PM</strong>
+			</div>
+			<div class="postbody">
+				I found out that french translation file in the Core Mod and just correct it a bit. <br><br>I'd really like to help translate the full game into french.<br><br>[attachment deleted by admin: too old]
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Semmy</strong> on <strong>April 11, 2014, 04:30:08 PM</strong>
+			</div>
+			<div class="postbody">
+				Like tynan said please send me a pm (-:<br><br>And we can take care of it.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Ermantis</strong> on <strong>April 11, 2014, 05:35:33 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello there, french fan here.<br>So i've been working on the french translation all evening, and I've done some pretty good progress. Most of the menus are translated. ;)<br>I still have to do all the defs, which is quite of work, but i'll manage doing it... ;)<br>Not sure what is the use of getting in the test team ?<br>Any way, i'll post my work in a topic in this section when it's done !
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>confusedwings</strong> on <strong>April 12, 2014, 07:22:27 AM</strong>
+			</div>
+			<div class="postbody">
+				i would like to do translation to 'Dutch' (Nederlands)<br><br>but since i don't have the game anymore (see other topic about finding out i had a illegal version)<br>I would need to get the files where i can do the translations on...<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Ermantis</strong> on <strong>April 12, 2014, 11:02:52 AM</strong>
+			</div>
+			<div class="postbody">
+				Well, that's it, there is my first shot... Still have a bunch of questions to be answered to have a fully working translation, but that's quite a good start for those french guys ;)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>Semmy</strong> on <strong>April 14, 2014, 05:11:17 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: confusedwings on April 12, 2014, 07:22:27 AM</cite><br>i would like to do translation to 'Dutch' (Nederlands)<br><br>but since i don't have the game anymore (see other topic about finding out i had a illegal version)<br>I would need to get the files where i can do the translations on...<br></blockquote><br>I would advise you to get the game in a legal way.<br>Than we can talk about adding you to the team where all the files are available.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>AcDie</strong> on <strong>April 14, 2014, 06:21:58 AM</strong>
+			</div>
+			<div class="postbody">
+				http://rimworldwiki.com/L10n
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>confusedwings</strong> on <strong>April 14, 2014, 10:54:51 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Semmy on April 14, 2014, 05:11:17 AM</cite><br><blockquote class="bbc_alternate_quote"><cite>Quote from: confusedwings on April 12, 2014, 07:22:27 AM</cite><br>i would like to do translation to 'Dutch' (Nederlands)<br><br>but since i don't have the game anymore (see other topic about finding out i had a illegal version)<br>I would need to get the files where i can do the translations on...<br></blockquote><br>I would advise you to get the game in a legal way.<br>Than we can talk about adding you to the team where all the files are available.<br></blockquote>I got the game now! Somebody on this forum sende me a PM and after some talking he gave me the money on my new paypall account. (I won't tell his/her name in public so the person wil not be burried in request for money).<br>I already started on translations to dutch.<br>it's a slow going proces since it hard to keep talking about the game and not to play it :p
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Notes on doing translations</strong><br>
+				Post by: <strong>StorymasterQ</strong> on <strong>April 14, 2014, 10:44:54 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: confusedwings on April 14, 2014, 10:54:51 AM</cite><br>I got the game now! Somebody on this forum sende me a PM and after some talking he gave me the money on my new paypall account.<br></blockquote><br>The things people do for their beloved game! Happy for you, CW!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Ribas</strong> on <strong>April 22, 2014, 09:17:38 AM</strong>
+			</div>
+			<div class="postbody">
+				Updated the portuguese version.<br>I'll now start on the spanish version.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>AlyxMS</strong> on <strong>April 23, 2014, 06:49:30 AM</strong>
+			</div>
+			<div class="postbody">
+				Tynan, since the UpdateNonEnglishTranslations.bat in the latest test version has targeted to AlyxMS/RimWorld-cn, there is no sense I should keep updating the RWTP repo.<br>All the other RWTP projects aside from sk and ru are already deleted, and I don't have permission to delete it by myself, can you delete the zh-CN in RWTP? Thanks.<br>I'll keep working on the RimWorld-cn repo.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>April 23, 2014, 10:38:50 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: AlyxMS on April 23, 2014, 06:49:30 AM</cite><br>Tynan, since the UpdateNonEnglishTranslations.bat in the latest test version has targeted to AlyxMS/RimWorld-cn, there is no sense I should keep updating the RWTP repo.<br>All the other RWTP projects aside from sk and ru are already deleted, and I don't have permission to delete it by myself, can you delete the zh-CN in RWTP? Thanks.<br>I'll keep working on the RimWorld-cn repo.<br></blockquote><br>Sounds good, I will delete it.<br><br>I thought I sent you a message a couple days ago asking you to switch to your personal repo :P Must have missed it.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>joeyeti</strong> on <strong>April 28, 2014, 07:34:54 AM</strong>
+			</div>
+			<div class="postbody">
+				General question (if already answered, just point me there!):<br><br>When a new release comes out that has some new things that need to be translated - or changes in existing text - how does one spot these changes/additions in need of translation to an already existing language? I.e. how does one get a "diff", like on the wiki page?<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Neone</strong> on <strong>April 28, 2014, 08:29:41 AM</strong>
+			</div>
+			<div class="postbody">
+				U need to take files from old release and compare it with new release.<br><br>AcDie and I posts such info in tester area.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>joeyeti</strong> on <strong>April 28, 2014, 08:32:13 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Neone on April 28, 2014, 08:29:41 AM</cite><br>U need to take files from old release and compare it with new release.<br><br>AcDie and I posts such info in tester area.<br></blockquote>Will check it out :)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>AlyxMS</strong> on <strong>June 02, 2014, 01:53:15 AM</strong>
+			</div>
+			<div class="postbody">
+				I've missed the 0.460 tester release and the translation included in Alpha 4 is for 0.441.<br>It's not a big problem since the only problem is 2 lines are left untranslated.<br><br>Would you update the Chinese translation in the next Alpha 4 update? (like Alpha 4B?)<br>I've posted it on Github.<br><br>Thanks.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>June 02, 2014, 08:10:39 AM</strong>
+			</div>
+			<div class="postbody">
+				I'm hoping there won't be an Alpha4b, so it may just wait until Alpha5. It's okay if two lines are missing, no big deal.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>StorymasterQ</strong> on <strong>June 02, 2014, 10:10:22 PM</strong>
+			</div>
+			<div class="postbody">
+				And then I just downloaded Alpha4c. What happened?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>June 03, 2014, 07:40:13 AM</strong>
+			</div>
+			<div class="postbody">
+				Storyteller bug. check http://ludeon.com
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>gertvv</strong> on <strong>June 13, 2014, 03:42:13 PM</strong>
+			</div>
+			<div class="postbody">
+				Any chance of getting Mod translation support for Alpha 5? Someone did a pt-PT translation of my mod and I would love to include it in the main release!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>June 13, 2014, 03:44:19 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: gertvv on June 13, 2014, 03:42:13 PM</cite><br>Any chance of getting Mod translation support for Alpha 5? Someone did a pt-PT translation of my mod and I would love to include it in the main release!<br></blockquote><br>Yes, that's a known bug: http://ludeon.com/mantis/view.php?id=784<br><br>Looks like we'll have some good time on A5 so I'll try to get that fixed for you.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>SillyPlayer</strong> on <strong>July 22, 2014, 01:02:25 AM</strong>
+			</div>
+			<div class="postbody">
+				I just want to point something in the translation...<br>as far as i see in Rimworld A5 there's more translations have been added <br>like arabic but looks like the game doesn't support "right-to-left" language <br>and i hope to see that fixed :)<br><br>keep the good work :)<br><br><br>regards
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>July 22, 2014, 10:12:48 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: SillyPlayer on July 22, 2014, 01:02:25 AM</cite><br>I just want to point something in the translation...<br>as far as i see in Rimworld A5 there's more translations have been added <br>like arabic but looks like the game doesn't support "right-to-left" language <br>and i hope to see that fixed :)<br><br>keep the good work :)<br><br><br>regards<br></blockquote><br>Yes, unfortunately we discovered the Unity doesn't actually support Arabic properly. I had assumed it was readable - the Arabic translators didn't even say something was wrong until like last week!<br><br>We're looking at solutions to this.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Rannzou</strong> on <strong>August 20, 2014, 08:14:09 AM</strong>
+			</div>
+			<div class="postbody">
+				Any Romanian language?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>August 20, 2014, 11:37:33 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Rannzou on August 20, 2014, 08:14:09 AM</cite><br>Any Romanian language?<br></blockquote><br>Not yet.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>momohedge</strong> on <strong>August 22, 2014, 06:31:03 PM</strong>
+			</div>
+			<div class="postbody">
+				I can't seem to find the "Create World" code line anywhere. Can someone find it?<br>It does not seem to have a french translation and cannot be fin in Menu_Main
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>August 22, 2014, 06:59:52 PM</strong>
+			</div>
+			<div class="postbody">
+				&lt;CreateWorld&gt; - Menus_Main.xml - line 5<br>Here you are :)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>August 22, 2014, 09:32:16 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: momohedge on August 22, 2014, 06:31:03 PM</cite><br>I can't seem to find the "Create World" code line anywhere. Can someone find it?<br>It does not seem to have a french translation and cannot be fin in Menu_Main<br></blockquote>I highly recommend you get a grep tool for this kind of need. There are lots (just google them).
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>crovaxon</strong> on <strong>August 30, 2014, 12:26:22 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello everyone,<br><br>I have bought this game recently and I am very much in love with it and I would really like to contribute to the translation process.<br>I would like to help out with the German translation, but before I send an E-Mail I figured I'll ask first, since German might be covered well enough already, probably by far more experienced people.<br>I'd like to point out I only have very basic knowledge of git and never used GitHub before and this would be my first try in translating. But that is just how much I enjoy RimWorld, made me immediately wanna help :).
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Sakuukuli</strong> on <strong>October 08, 2014, 08:02:54 AM</strong>
+			</div>
+			<div class="postbody">
+				After messing around with translation for a bit I have some things to say:<br><br>1. Corpse labels are untranslatable.<br>When I click on a dead body of a wild boar the name is correct: "Villisika (kuollut)". That said, when I click on the I-symbol there are untranslated entries there. It says "Wild boar" in the title of the window and "wild boar ruumis" in the description of the object.<br><br>2. I made templates for all the DefInjected's.<br>I converted all the labels in Def's to translate-ready DefInjected's so that translating them would be as easy as translating Keyed's.<br>https://github.com/Sakuukuli/RimWorld-Templates<br>You can do with it as you please.<br><br>3. Shouldn't it be cryosleep and not cryptosleep?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>darktakayanagi</strong> on <strong>October 09, 2014, 03:24:55 PM</strong>
+			</div>
+			<div class="postbody">
+				Is there a way to make the translated text smaller if it gets outside of a box/button?<br>the english text fits fine but for other languages it might go outside of the box/button border, is it the only optionfor translators to try and change the wording or it can be easily fixed code wise?<br><br>i've attached an image with the problem (red box around the issue).<br><br>[attachment deleted by admin: too old]
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>October 09, 2014, 03:52:19 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Sakuukuli on October 08, 2014, 08:02:54 AM</cite><br>After messing around with translation for a bit I have some things to say:<br><br>1. Corpse labels are untranslatable.<br>When I click on a dead body of a wild boar the name is correct: "Villisika (kuollut)". That said, when I click on the I-symbol there are untranslated entries there. It says "Wild boar" in the title of the window and "wild boar ruumis" in the description of the object.<br><br>2. I made templates for all the DefInjected's.<br>I converted all the labels in Def's to translate-ready DefInjected's so that translating them would be as easy as translating Keyed's.<br>https://github.com/Sakuukuli/RimWorld-Templates<br>You can do with it as you please.<br><br>3. Shouldn't it be cryosleep and not cryptosleep?<br></blockquote><br>1. Hmm, it seems like one of the many little untranslatable things. Hope it doesn't drive you mad; there are a number of tiny issues like this for now.<br><br>2. Cool!<br><br>3. It's cryptosleep.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Romi</strong> on <strong>December 29, 2014, 09:17:46 AM</strong>
+			</div>
+			<div class="postbody">
+				Any Romanian translate?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>whell2</strong> on <strong>January 01, 2015, 03:39:12 AM</strong>
+			</div>
+			<div class="postbody">
+				Happy new year everyone! \o
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>gokimaxTR</strong> on <strong>January 05, 2015, 02:27:20 PM</strong>
+			</div>
+			<div class="postbody">
+				hi me and friend starting turkish translation thank you tynan :)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Latta</strong> on <strong>January 31, 2015, 02:56:01 PM</strong>
+			</div>
+			<div class="postbody">
+				Tynan, is there any way to assign a font to a specific language? Because Korean Windows always try to use weird default font when trying to use english-specific font.<br><br>OR, at least, specify font sizes to be a bit smaller?<br>I posted a screenshot of one of 'New colony' screen. It's not alphabetical so you may not notice, but those subtitle(headline?) texts have cropped out of its upper side. Will it require a separate dll-mod like EdB's Interface Mod, or it's just impossible on my level because fonts are too core level?<br><br><br><a href="http://i797.photobucket.com/albums/yy260/urty5656/screenshot20.png">http://i797.photobucket.com/albums/yy260/urty5656/screenshot20.png</a>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>January 31, 2015, 05:23:34 PM</strong>
+			</div>
+			<div class="postbody">
+				Fonts are big files, so I can't ship separate fonts for each language.<br><br>Next build will have a new font for everything, so hopefully that will fix some of that.<br><br>Can you be specific about where text is cut off for you? Screenshots with red circles are best. I can't actually read the text here and know what it's supposed to say :p
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Latta</strong> on <strong>February 01, 2015, 09:55:44 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Tynan on January 31, 2015, 05:23:34 PM</cite><br>Can you be specific about where text is cut off for you? Screenshots with red circles are best. I can't actually read the text here and know what it's supposed to say :p<br></blockquote><br>Sorry!<br><br><a href="http://i797.photobucket.com/albums/yy260/urty5656/screenshot20.jpg">http://i797.photobucket.com/albums/yy260/urty5656/screenshot20.jpg</a><br>It's a character creation window. Background Story, Incapables, Traits and Abilities are the big ones; Construction, Growing and other dropped words are the small ones.<br><br>Big ones are cropped out by about 2 pixels, small ones are by like 2.5 pixels? Something close to that.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>February 01, 2015, 10:01:18 PM</strong>
+			</div>
+			<div class="postbody">
+				It happens because Korean seems to be set to never print small. Is it possible read Korean characters smaller than that or will I need to provide enough vertical space everywhere for this size?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Latta</strong> on <strong>February 01, 2015, 11:52:09 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Tynan on February 01, 2015, 10:01:18 PM</cite><br>It happens because Korean seems to be set to never print small. Is it possible read Korean characters smaller than that or will I need to provide enough vertical space everywhere for this size?<br></blockquote>Smaller sizes should have no problem IMO.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dandi</strong> on <strong>February 08, 2015, 03:18:52 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi, Tynan!<br>We got stuck translating the new sentence generator (this is a hell of a job, btw. English is very merciful to such a sort of substitutions, compared to Russian). But that's beside the point.<br><br>I was wondering if a number of substitutions is determined dynamically. In other words, should we have exactly the same number of synonyms for a substitution as you have in the English original?<br><br>Thanks!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>rolitheone</strong> on <strong>March 27, 2015, 07:04:26 PM</strong>
+			</div>
+			<div class="postbody">
+				Hey guys, I am an Austrian university student studying English. If you require any help with translations I would love to help you out.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>French translation</strong><br>
+				Post by: <strong>Melora</strong> on <strong>April 19, 2015, 03:57:57 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi, I've just discover the game and loooove it !<br>I will try to help you translate it in french because lot of parts of the game are not correctly translate (sorry, my french is better than my english ^^)<br>thanks for the game
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>NIPSEN</strong> on <strong>April 22, 2015, 02:48:19 PM</strong>
+			</div>
+			<div class="postbody">
+				Hi Tynan, can you use the latest version of the French translation for your next build ?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Damian, aka Bucu</strong> on <strong>September 06, 2015, 08:38:27 AM</strong>
+			</div>
+			<div class="postbody">
+				Just finished translating game to Polish (Build 914). Did some code optimization too. It looks so much better now :)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>NeverPire</strong> on <strong>September 23, 2015, 03:11:31 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello,<br><br>I love this game and I would like to help to improve it.<br>I just send an email to ludeonhelp and know I hope I will have the authorization.<br>My mother language is French, so I can help actual French traductors.<br>You can see an email in my profile so don't hesitate to send me a text you want to traduce.<br><br>Sorry, I'm sure I have done some errors in my previous sentences.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>NeverPire</strong> on <strong>September 26, 2015, 10:34:03 AM</strong>
+			</div>
+			<div class="postbody">
+				Hello,<br><br>I don't understand how to push my translation into the game so can you do that for me once and explain to me what's a flag image and how to create a FriendlyName.txt ?<br><br>That's the French translation of Incidents with some improvements.<br><br>&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br><br>-&lt;LanguageData&gt;<br><br>&lt;LetterLabelAnimalInsanitySingle&gt;Animal fou&lt;/LetterLabelAnimalInsanitySingle&gt;<br><br>&lt;AnimalInsanitySingle&gt;Un {0} local est devenu fou. Il attaquera à vue n'importe qui.&lt;/AnimalInsanitySingle&gt;<br><br>&lt;LetterLabelAnimalInsanityMultiple&gt;Animaux fous&lt;/LetterLabelAnimalInsanityMultiple&gt;<br><br>&lt;AnimalInsanityMultiple&gt;Une sorte de vague psychotique s'est abattue sur les environs. Vos colons vont bien, mais...\n\nIl semblerait que beaucoup de {0}s dans la région soient devenus fous.&lt;/AnimalInsanityMultiple&gt;<br><br>&lt;LetterLabelCropBlight&gt;Fléau&lt;/LetterLabelCropBlight&gt;<br><br>&lt;CropBlight&gt;Un mystérieux fléau a détruit vos cultures.&lt;/CropBlight&gt;<br><br>&lt;LetterLabelMiracleHeal&gt;Miracle&lt;/LetterLabelMiracleHeal&gt;<br><br>&lt;MiracleHeal&gt;{0} a guéri miraculeusement !&lt;/MiracleHeal&gt;<br><br>&lt;!-- Enemy raids --&gt;<br><br><br>&lt;EnemyRaidWalkIn&gt;Un groupe de pillards de {0} sont arrivés à proximité.&lt;/EnemyRaidWalkIn&gt;<br><br>&lt;EnemyRaidEdgeDrop&gt;Un groupe de pillards de {0} effectuent un débarquement orbital à proximité.&lt;/EnemyRaidEdgeDrop&gt;<br><br>&lt;EnemyRaidCenterDrop&gt;Un groupe de pillards de {0} effectuent un débarquement orbital en plein milieu de la colonie !&lt;/EnemyRaidCenterDrop&gt;<br><br>&lt;!-- Friendly raids --&gt;<br><br><br>&lt;FriendlyRaidWalkIn&gt;Un groupe de combattants amicaux de {0} sont arrivés à proximité.&lt;/FriendlyRaidWalkIn&gt;<br><br>&lt;FriendlyRaidEdgeDrop&gt;Un groupe de combattants amicaux de {0} effectuent un débarquement orbital à proximité.&lt;/FriendlyRaidEdgeDrop&gt;<br><br>&lt;FriendlyRaidCenterDrop&gt;Un groupe de combattants amicaux de {0} effectuent un débarquement orbital en plein milieu de la colonie !&lt;/FriendlyRaidCenterDrop&gt;<br><br>&lt;LetterLabelRefugeePodCrash&gt;Capsule de sauvetage&lt;/LetterLabelRefugeePodCrash&gt;<br><br>&lt;RefugeePodCrash&gt;Vous avez détecté une capsule de sauvetage qui s'est violemment écrasée dans les environs.\n\nSi l'impact a laissé des survivants, ils doivent être gravement blessés.&lt;/RefugeePodCrash&gt;<br><br>&lt;LetterLabelCargoPodCrash&gt;Capsule de cargo&lt;/LetterLabelCargoPodCrash&gt;<br><br>&lt;CargoPodCrash&gt;Vous avez détecté un groupe de containers qui s'est écrasé dans les environs.\n\nVous pourrez peut-être trouver des choses utiles dans les décombres.&lt;/CargoPodCrash&gt;<br><br>&lt;AnElectricalConduit&gt;Un conduit électrique&lt;/AnElectricalConduit&gt;<br><br>&lt;ShortCircuit&gt;Un défaut dans {0} a provoqué un court-circuit.\n\nLes {1} Wd d'électricité présents dans les batteries ont été libérés dans une puissante déflagration.&lt;/ShortCircuit&gt;<br><br>&lt;ShortCircuitWasLarge&gt;Cette énorme quantité d'énergie a provoquée une explosion de taille considérable.&lt;/ShortCircuitWasLarge&gt;<br><br>&lt;ShortCircuitWasHuge&gt;L'explosion est vraiment énorme ! Wow.&lt;/ShortCircuitWasHuge&gt;<br><br>&lt;TraderArrival&gt;Un vaisseau commercial passe à proximité.\n\nIl se présente sous le nom de {0}. C'est un {1}.&lt;/TraderArrival&gt;<br><br>&lt;SingleTravelerPassing&gt;Un {0} de {1} passe dans les environs. Son nom est {2}.&lt;/SingleTravelerPassing&gt;<br><br>&lt;GroupTravelersPassing&gt;Un groupe de voyageurs de {0} passe dans les environs.&lt;/GroupTravelersPassing&gt;<br><br>&lt;LetterLabelSingleVisitorArrives&gt;Visiteur&lt;/LetterLabelSingleVisitorArrives&gt;<br><br>&lt;SingleVisitorArrives&gt;Un {0} de {1} vient visiter votre colonie.\n\nSon nom est {2}.&lt;/SingleVisitorArrives&gt;<br><br>&lt;LetterLabelGroupVisitorsArrive&gt;Visiteurs&lt;/LetterLabelGroupVisitorsArrive&gt;<br><br>&lt;GroupVisitorsArrive&gt;Un groupe venu de {0} vient visiter votre colonie.&lt;/GroupVisitorsArrive&gt;<br><br>&lt;VisitorsLeaving&gt;Les visiteurs venus de {0} s'en vont.&lt;/VisitorsLeaving&gt;<br><br>&lt;LetterLabelWandererJoin&gt;Vagabond nous rejoint&lt;/LetterLabelWandererJoin&gt;<br><br>&lt;WandererJoin&gt;NAME, un(e) {0} a rejoint votre colonie. Le métier de HECAP est {1}.&lt;/WandererJoin&gt;<br><br>&lt;LetterLabelManhunterPackArrived&gt;Meute de Manhunter&lt;/LetterLabelManhunterPackArrived&gt;<br><br>&lt;ManhunterPackArrived&gt;Une meute de Manhunter {0}s arrive dans la région. Ils vont parcourir la région à la recherche de viande humaine.\n\nIls ne passent pas les portes, donc si vous restez derrière vos murs vous serrez en sécurité. Ils n'attaquent pas les tourelles inactives, donc mettez vos tourelles hors tension si vous voulez les sauvez\n\nIls quitteront la région dans quelques jours.&lt;/ManhunterPackArrived&gt;<br><br>&lt;!-- Crashed ship part--&gt;<br><br><br>&lt;LetterLabelSpaceshipPartCrash&gt;Vaisseau démoniaque&lt;/LetterLabelSpaceshipPartCrash&gt;<br><br>&lt;SpaceshipPartCrash&gt;Un gros débris provenant d'un ancien vaisseau s'est écrasé à proximité.\n\nVos colons le sentent au fond de leurs pensées, les exhortant à commettre des actes inqualifiables. Il doit y avoir à l'intérieur une IA dotée d'une personnalité capable de projeter des ondes psychiques et cette IA n'est pas amicale.\n\nDétruisez-la aussi vite que possible !&lt;/SpaceshipPartCrash&gt;<br><br>&lt;MessageAnimalInsanityPulse&gt;L'ancienne structure a émis une onde psychique qui a provoqué un élan de folie meurtrière parmi les animaux alentours.&lt;/MessageAnimalInsanityPulse&gt;<br><br>&lt;LetterShipPartDroveColonistInsane&gt;L'épave de l'ancien vaisseau a émis une pulsation psychique focalisée qui a fait perdre la raison à votre colon {0}.&lt;/LetterShipPartDroveColonistInsane&gt;<br><br>&lt;AwokeDaysAgo&gt;S'est éveillé il y a {0} jours&lt;/AwokeDaysAgo&gt;<br><br>&lt;PsychicDroneLevel&gt;Niveau du drone Psychique : {0}&lt;/PsychicDroneLevel&gt;<br><br>&lt;PsychicDroneLevelLow&gt;Faible&lt;/PsychicDroneLevelLow&gt;<br><br>&lt;PsychicDroneLevelMedium&gt;Moyen&lt;/PsychicDroneLevelMedium&gt;<br><br>&lt;PsychicDroneLevelHigh&gt;Haut&lt;/PsychicDroneLevelHigh&gt;<br><br>&lt;PsychicDroneLevelExtreme&gt;Extrême&lt;/PsychicDroneLevelExtreme&gt;<br><br>&lt;LetterLabelPsychicDroneLevelIncreased&gt;L'influence du drone augmente&lt;/LetterLabelPsychicDroneLevelIncreased&gt;<br><br>&lt;LetterPsychicDroneLevelIncreased&gt;L'épave du drone émet désormais des ondes psychiques plus puissantes. Chaque humanoïde dans les environs se sentira bien plus dérangé, terrifié et paranoïaque.&lt;/LetterPsychicDroneLevelIncreased&gt;<br><br>&lt;!-- Agent revealed --&gt;<br><br><br>&lt;LetterLabelAgentRevealed&gt;Agents&lt;/LetterLabelAgentRevealed&gt;<br><br>&lt;LetterAgentRevealed&gt;{0} ont été démasqués comme agents de votre ennemi {1}.\n\nIls essaient à présent de s'échapper.&lt;/LetterAgentRevealed&gt;<br><br>&lt;!-- Distant psychic drone --&gt;<br><br><br>&lt;LetterLabelPsychicDrone&gt;Drone psychique&lt;/LetterLabelPsychicDrone&gt;<br><br>&lt;LetterIncidentPsychicDrone&gt;Un très violent mal de tête affecte tous vos colons {0} !\n\nUn drone psychique lointain s'agite. Il projette une puissante onde psychique à travers toute la région, sur une fréquence que semble n'affecter que les colons de sexe {0}. Durant plusieurs jours, leur état d'esprit va se dégrader.&lt;/LetterIncidentPsychicDrone&gt;<br><br>&lt;LetterLabelPsychicSoothe&gt;Vague psychique apaisante&lt;/LetterLabelPsychicSoothe&gt;<br><br>&lt;LetterIncidentPsychicSoothe&gt;Tous les colons {0}s sourient de contentement!\n\nUn quelconque dispositif de bonheur s'agite. Il projette une puissante vague psychique dans toute la région, la fréquence ne semble affecté que les {0}s. Durant quelques jours, certaines personnes seront légèrement de meilleure humeur.&lt;/LetterIncidentPsychicSoothe&gt;<br><br>&lt;!-- Beavers --&gt;<br><br><br>&lt;LetterLabelBeaversArrived&gt;Alphacastors !&lt;/LetterLabelBeaversArrived&gt;<br><br>&lt;BeaversArrived&gt;Un groupe d' Alphacastors affamés vient juste d'arriver.\n\nEssayez de les éliminer avant qu'ils n'aient dévoré jusqu'au dernier arbre de la région.&lt;/BeaversArrived&gt;<br><br>&lt;!-- Refugee chased --&gt;<br><br><br>&lt;RefugeeChasedInitial&gt;Un colon de {1} du nom de {0} vous appelle. HECAP est pourchassé par des {2} de {3}!\n\nHECAP vous supplie de l'aider et vous offre de rejoindre votre colonie. HE a {4} ans.\n\nSoyez averti - si vous acceptez, vous devrez combattre les {2} à ses trousses.&lt;/RefugeeChasedInitial&gt;<br><br>&lt;RefugeeChasedInitial_Accept&gt;Secourir&lt;/RefugeeChasedInitial_Accept&gt;<br><br>&lt;RefugeeChasedInitial_Reject&gt;Ignorer le message&lt;/RefugeeChasedInitial_Reject&gt;<br><br>&lt;RefugeeChasedRejected&gt;{0} hurle de panique dans le micro avant de couper la transmission.&lt;/RefugeeChasedRejected&gt;<br><br>&lt;/LanguageData&gt;
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Australian Translation, maybe?</strong><br>
+				Post by: <strong>DarkestLight</strong> on <strong>November 17, 2015, 06:18:36 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi, hi. Newbie here. Oh I just thought of an idea. You know how some games put a twist on the languages...? if not well... I remember some games would do one for Australian's :P<br><br>If I may, I would love to switch it around because I'm a true blue aussie, haha.<br>Ain't that ironic, eh?<br><br>Well, if not... I'll probably do it anyway for myself to enjoy.&nbsp; ;D<br><br><b>Edit:</b> I've changed Female to shelia and male to bloke, bed to swag, allies to mates, enemies to... (can't remember lol) etc.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>alareth1976</strong> on <strong>July 29, 2016, 03:52:28 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi,<br><br>I just got added to Rimworld's GitHub to help with Italian Translation but I can't find&nbsp; (GameFolder)/Mods/Core/Languages/en-US in my game's folder.<br>I bought it on Steam, where can I find it?<br><br>thank you!! 
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Cabodo</strong> on <strong>July 29, 2016, 09:04:23 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: alareth1976 on July 29, 2016, 03:52:28 AM</cite><br>Hi,<br><br>I just got added to Rimworld's GitHub to help with Italian Translation but I can't find&nbsp; (GameFolder)/Mods/Core/Languages/en-US in my game's folder.<br>I bought it on Steam, where can I find it?<br><br>thank you!!<br></blockquote><br>You have to go to (RimWorld folder) &gt; Mods &gt; Core &gt; Languages &gt; English<br><br>thats how ive been translating to portuguese, if thats not the right way, I think its an alternative way, because i've never found a folder called "en-US"<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>alareth1976</strong> on <strong>August 01, 2016, 01:33:45 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Cabodo on July 29, 2016, 09:04:23 PM</cite><br>You have to go to (RimWorld folder) &gt; Mods &gt; Core &gt; Languages &gt; English<br><br>thats how ive been translating to portuguese, if thats not the right way, I think its an alternative way, because i've never found a folder called "en-US"<br></blockquote><br>It can't be...<br>In the (RimWorld folder) &gt; Mods &gt; Core &gt; Languages &gt; English folder I have 64 files inside 8 folders while in (RimWorld folder) &gt; Mods &gt; Core &gt; Languages &gt; Italian I have more than 5.000 inside more than 1200 folders.<br><br>English folder seems likely a default one, not the one used by the games
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>alareth1976</strong> on <strong>August 01, 2016, 01:49:51 AM</strong>
+			</div>
+			<div class="postbody">
+				could it be (RimWorld folder) &gt; Mods &gt; Core &gt; Defs ?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>August 01, 2016, 06:06:32 AM</strong>
+			</div>
+			<div class="postbody">
+				Your folder Mods &gt; Core &gt; Languages &gt; English is correct. You just can't take that as the translation source, as it only contains a few examples, not the full set. English has no complete translation folder, as it doesn't need translation. <br>This makes it for us translators a lot harder, as you need to find out what must be translated but it is as it is.<br>You can take another folder as a source to see what you need to translate in principle, even if you can't read what's written there. <br>I'm responsible for german and can say that These files are as far as I know up to date. <br>But I know that it's hard to read it, if you don't know german...
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>|~Noramon75~|</strong> on <strong>August 01, 2016, 11:05:55 AM</strong>
+			</div>
+			<div class="postbody">
+				some changes for german language.<br><br>- completely translated Recipes_Add.xml<br>- changed an enum (is read better this way)<br>- corrected thoughts (they do not rot, they expire ;) )<br><br>[attachment deleted by admin - too old]
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>August 01, 2016, 04:47:33 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: |~Noramon75~| on August 01, 2016, 11:05:55 AM</cite><br>some changes for german language.<br><br>- completely translated Recipes_Add.xml<br>- changed an enum (is read better this way)<br>- corrected thoughts (they do not rot, they expire ;) )<br></blockquote><br>Thank you for the changes, I've integrated them mostly 8)<br>But next time please post it in the german forum, not here. :)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>|~Noramon75~|</strong> on <strong>August 01, 2016, 04:51:10 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Haplo on August 01, 2016, 04:47:33 PM</cite><br><blockquote class="bbc_alternate_quote"><cite>Quote from: |~Noramon75~| on August 01, 2016, 11:05:55 AM</cite><br>some changes for german language.<br><br>- completely translated Recipes_Add.xml<br>- changed an enum (is read better this way)<br>- corrected thoughts (they do not rot, they expire ;) )<br></blockquote><br>Thank you for the changes, I've integrated them mostly 8)<br>But next time please post it in the german forum, not here. :)<br></blockquote><br>sorry. i just followed the link in the readme... will do so next time :)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>August 01, 2016, 04:58:19 PM</strong>
+			</div>
+			<div class="postbody">
+				Thanks for the info. Fixed it ;)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>alareth1976</strong> on <strong>August 02, 2016, 03:43:13 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Haplo on August 01, 2016, 06:06:32 AM</cite><br>Your folder Mods &gt; Core &gt; Languages &gt; English is correct. You just can't take that as the translation source, as it only contains a few examples, not the full set. English has no complete translation folder, as it doesn't need translation. <br>This makes it for us translators a lot harder, as you need to find out what must be translated but it is as it is.<br>You can take another folder as a source to see what you need to translate in principle, even if you can't read what's written there. <br>I'm responsible for german and can say that These files are as far as I know up to date. <br>But I know that it's hard to read it, if you don't know german...<br></blockquote><br>It does not make any sense.<br>Inside (RimWorld folder) &gt; Mods &gt; Core &gt; Defs there are, kind, all the files that are in the other translations<br><br><a href="http://i.imgur.com/4ktqhlU.png">http://i.imgur.com/4ktqhlU.png</a><br><a href="http://i.imgur.com/Y2gEevZ.png">http://i.imgur.com/Y2gEevZ.png</a><br><a href="http://i.imgur.com/bV5m6M7.png">http://i.imgur.com/bV5m6M7.png</a><br><br>even tho, inside Italians translations there are some differences compared to it<br><br><a href="http://i.imgur.com/a2KPAtU.png">http://i.imgur.com/a2KPAtU.png</a><br><br>In the translations there's a single file and inside the file are defined different biomes<br><br><a href="http://i.imgur.com/UDIUVQ1.png">http://i.imgur.com/UDIUVQ1.png</a>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>August 03, 2016, 11:12:58 AM</strong>
+			</div>
+			<div class="postbody">
+				Yes, that looks to be correct.. But, sorry was there a question that I missed?<br><br><br>If you want to ask why the files are different, that is because in the Core -&gt; Defs -&gt; xxx folders are the full Def-files with all the infos that RimWorld needs to create the objects. Where in Core -&gt; Languages -&gt; xxx -&gt; DefInjected -&gt; xxx folders are only the informations about where the translation strings can be found.<br><br>Example Core -&gt; Defs -&gt; BiomeDefs -&gt; Biomes_Arid.xml:<br><div class="codeheader"><span class="code floatleft">Code</span> <a class="codeoperation smf_select_text">Select</a> <a class="codeoperation smf_expand_code hidden" data-shrink-txt="Shrink" data-expand-txt="Expand">Expand</a></div><code class="bbc_code"><br>&nbsp; &lt;BiomeDef&gt;<br>&nbsp; &nbsp; &lt;defName&gt;AridShrubland&lt;/defName&gt;<br>&nbsp; &nbsp; &lt;label&gt;arid shrubland&lt;/label&gt;<br>&nbsp; &nbsp; &lt;description&gt;A dry region, but not dry enough to become a true desert. Open plains with grasses and bushes give way to scattered groves of trees. Plants are hardy and there is a moderate density of animals.&lt;/description&gt;<br>&nbsp; &nbsp; &lt;workerClass&gt;BiomeWorker_AridShrubland&lt;/workerClass&gt;<br>&nbsp; &nbsp; &lt;animalDensity&gt;4.0&lt;/animalDensity&gt;<br>&nbsp; &nbsp; &lt;plantDensity&gt;0.5&lt;/plantDensity&gt;<br>&nbsp; &nbsp; &lt;baseColor&gt;(125,101,78)&lt;/baseColor&gt;<br></code><br><br>This part contains three important informations that you need: The defName, the string label and the string description.<br><br>So the translation file needs this information seperated by a .<br>(I've taken an extract from the german translation file as an example here :) )<br><div class="codeheader"><span class="code floatleft">Code</span> <a class="codeoperation smf_select_text">Select</a> <a class="codeoperation smf_expand_code hidden" data-shrink-txt="Shrink" data-expand-txt="Expand">Expand</a></div><code class="bbc_code"><br>&nbsp; &lt;AridShrubland.label&gt;Savanne&lt;/AridShrubland.label&gt;<br>&nbsp; &lt;AridShrubland.description&gt;Eine trockene Gegend, aber nicht trocken genug für ...&lt;/AridShrubland.description&gt;<br></code><br><br>Is this clear so far? Or do you have any more questions about it?<br><br><br>For if you're asking why your translations are all in one single file: <br>It may be that it is from an old alpha version and the structure was changed, or it just was translated like that. The file structure isn't really relevant, the info inside the file is more important. But for example I try to build my structure according to the Core files too. I also split up my files if the core files are split up. Not because it is needed, but because it makes it easier to see where what can be found.<br><br><br>Hopefully this clarifies it a bit? I know that the translation isn't easy... I also know that you'll later on find some more complicated pitfalls, but this is a basic introduction if you want ;)
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>dhrgusdlrns</strong> on <strong>August 05, 2016, 12:19:44 AM</strong>
+			</div>
+			<div class="postbody">
+				Deer, developer.<br>Can we translate Background story? <br>Some people said it's not opened cause it's supported by sponsor.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>capiqua</strong> on <strong>August 05, 2016, 03:08:31 AM</strong>
+			</div>
+			<div class="postbody">
+				<br>Where are these lines to translate?<br>http://fs5.directupload.net/images/160805/tgrht7ex.jpg<br><br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>August 05, 2016, 12:43:54 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: capiqua on August 05, 2016, 03:08:31 AM</cite><br><br>Where are these lines to translate?<br>http://fs5.directupload.net/images/160805/tgrht7ex.jpg<br></blockquote><br>I'm afraid those can't be translated (yet).
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>kaptain_kavern</strong> on <strong>August 05, 2016, 03:42:07 PM</strong>
+			</div>
+			<div class="postbody">
+				Maybe we will be able with the new add in CCL : <a href="https://github.com/RimWorldCCLTeam/CommunityCoreLibrary/pull/131">BackstoriesCore by mipen</a>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>August 24, 2016, 03:31:38 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi, i've got some problems translating 0.15 stuff.<br><br>I switch to unstable beta and try to translate drugs.<br>So there is the file ~\Mods\Core\Defs\Drugs\Alcohol_Beer.xml<br>I created ~\Mods\Core\Languages\Russian\DefInjected\Drugs\Alcohol_Beer.xml<br>I made my translation, but it don't appear in game. Am I doing somethimg wrong?<br><br>Same problem with other files in that directory.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>pluhi</strong> on <strong>August 24, 2016, 04:29:40 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Dinoabunai on August 24, 2016, 03:31:38 AM</cite><br>Hi, i've got some problems translating 0.15 stuff.<br><br>I switch to unstable beta and try to translate drugs.<br>So there is the file ~\Mods\Core\Defs\Drugs\Alcohol_Beer.xml<br>I created ~\Mods\Core\Languages\Russian\DefInjected\Drugs\Alcohol_Beer.xml<br>I made my translation, but it don't appear in game. Am I doing somethimg wrong?<br><br>Same problem with other files in that directory.<br></blockquote><br>You only need these lines for beer:<br>&lt;Beer.label&gt;beer&lt;/Beer.label&gt;<br>&lt;Beer.description&gt;The first beverage besides water ever consumed by mankind. Beer can taste good, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.&lt;/Beer.description&gt;<br>&lt;Beer.ingestible.ingestCommandString&gt;Drink {0}&lt;/Beer.ingestible.ingestCommandString&gt;<br>&lt;Beer.ingestible.ingestReportString&gt;Drinking {0}.&lt;/Beer.ingestible.ingestReportString&gt;<br><br>You can check other languages for ideas.<br><br>I have a better question. Some drugs don't have specific ingestCommandString and ingestReportString. In these cases the game falls back to base definition. Looks like this:<br><br> &lt;ThingDef Name="MakeableDrugPillBase" ParentName="MakeableDrugBase" Abstract="True"&gt;<br>&nbsp; &nbsp; &lt;ingestible&gt;<br>&nbsp; &nbsp; &nbsp; &lt;foodType&gt;Processed&lt;/foodType&gt;<br>&nbsp; &nbsp; &nbsp; &lt;baseIngestTicks&gt;120&lt;/baseIngestTicks&gt;<br>&nbsp; &nbsp; &nbsp; &lt;chairSearchRadius&gt;0&lt;/chairSearchRadius&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ingestSound&gt;Ingest_Pill&lt;/ingestSound&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ingestHoldUsesTable&gt;false&lt;/ingestHoldUsesTable&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ingestCommandString&gt;Take {0}&lt;/ingestCommandString&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ingestReportString&gt;Taking {0}.&lt;/ingestReportString&gt;<br>&nbsp; &nbsp; &lt;/ingestible&gt;<br>&nbsp; &lt;/ThingDef&gt;<br><br>There is no &lt;defName&gt; tag here, how to handle these?<br><br>UPDATE: You do it exactly the same as others. Like: &lt;Amphetamine.ingestible.ingestCommandString&gt;
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>August 24, 2016, 06:17:55 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote</cite>You only need these lines for beer:<br>&lt;Beer.label&gt;beer&lt;/Beer.label&gt;<br>&lt;Beer.description&gt;The first beverage besides water ever consumed by mankind. Beer can taste good, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.&lt;/Beer.description&gt;<br>&lt;Beer.ingestible.ingestCommandString&gt;Drink {0}&lt;/Beer.ingestible.ingestCommandString&gt;<br>&lt;Beer.ingestible.ingestReportString&gt;Drinking {0}.&lt;/Beer.ingestible.ingestReportString&gt;</blockquote><br>I know. i already translate them, but game shows default english text instead.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>August 24, 2016, 01:50:05 PM</strong>
+			</div>
+			<div class="postbody">
+				Yes that is something that makes it harder this time to translate it:<br><br>If you take a look into the file Alcohol_Beer.xml you'll find that<br>&lt;Beer.label&gt; / &lt;Beer.description&gt; are part of the ThingDef for Beer.<br>This means you must place this translation inside the ThingDef folder in your translations.<br>Same for Wort..<br><br>Next there is &lt;AlcoholHigh.label&gt;, &lt;AlcoholHigh.stages.0.label&gt;, ...<br>These are actual HediffDefs and need to be inside a file in the folder HediffDef.<br><br>Next we have ThoughtDef, ChemicalDef and NeedDef to be extracted and placed in their corresponding folder..<br><br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>August 25, 2016, 04:42:55 AM</strong>
+			</div>
+			<div class="postbody">
+				Thx, Haplo!<br>But it really suck, that I spent 3 days to figure that out.<br><br>It'll be very cool, if devs at least makes a post on how localisation mechanics works. And it'll be VERY VERY nice, if they improve the mechanic, so that translators can clearly understand, where the game takes a particular translation. For now localisation process is a mess.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>August 26, 2016, 05:12:02 AM</strong>
+			</div>
+			<div class="postbody">
+				Note - from now (0.15.1276) drugs have fictional names.<br>So be sure to make the necessary changes in the game files.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>KviEt</strong> on <strong>September 02, 2016, 10:11:36 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi.<br>Сan i get complete version of Defs somewhere?<br>Defs from Steam has not all data like Shooting.label...
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>September 13, 2016, 06:43:55 AM</strong>
+			</div>
+			<div class="postbody">
+				In Defs\SkillDefs\Skills.xml we have something like this:<br><br>&lt;SkillDef&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;defName&gt;Crafting&lt;/defName&gt;<br>&nbsp; &nbsp; &lt;description&gt;Crafting general items including weapons and tools.&lt;/description&gt;<br>&nbsp; &nbsp; &lt;skillLabel&gt;Crafting&lt;/skillLabel&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;pawnLabel&gt;Craftsman&lt;/pawnLabel&gt;<br>&lt;/SkillDef&gt;<br><br>But game also use &lt;Crafting.label&gt; tag in-game (see attachment). Same for other skills.<br><br>This is a bug? Or how do we should unerstand, that non-existing tag should be translated?<br><br>[attachment deleted by admin - too old]
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>September 13, 2016, 07:08:26 AM</strong>
+			</div>
+			<div class="postbody">
+				Where the text from <b>DefInjected/DesignationCategoryDef/DesignationCategories.xml</b> should appear?<br>It's just does not appear when you hover the cursor over the tabs.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dinoabunai</strong> on <strong>September 19, 2016, 01:58:17 PM</strong>
+			</div>
+			<div class="postbody">
+				Well, if there is no answers to my questions, then I ask them in the "Bugs" thread.<br><br>So I asked this questions in:<br>https://ludeon.com/forums/index.php?topic=26255.0<br>https://ludeon.com/forums/index.php?topic=26256.0
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>raviranjan</strong> on <strong>October 25, 2016, 03:46:25 AM</strong>
+			</div>
+			<div class="postbody">
+				Though am not very sure on how it can be translated, but yes you can avail help from some translation agency for the same if you are comfortable with it. I rely on <a href="http://www.transversesolutions.com/">Transverse Solutions</a> for most of my translation work.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>arxdsilva</strong> on <strong>October 25, 2016, 10:05:32 AM</strong>
+			</div>
+			<div class="postbody">
+				It would be nice to have a EN-US Github repo, so when you change tags like &lt;Load&gt; to &lt;LoadGame&gt; we can fetch into your changes and maintain our translations without having to check the game on every translation to see what is broken.<br><br>OBS: Checking is also necessary and have to be done, but this will speed up the translation and give us some basis not to break the translation ingame on every EN-US update.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Neros</strong> on <strong>November 28, 2016, 03:42:09 PM</strong>
+			</div>
+			<div class="postbody">
+				Hoping to be able to take a crack at the Danish translation when I am allowed, so that the non-english speaking danes can enjoy this fantastic game ;D<br><br>Never worked on Github before though, so I hope I don't mess things up to much and do it right :P
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>leif.ostring</strong> on <strong>December 03, 2016, 01:06:58 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi Neros, and welcome! :-)<br>I am trying to translate ad clean up the Norwegian set.<br>The proscess is a bit frustrating, as there are no full set of English words. To help I have found that the German folder is a pretty compleate source.<br>Takk for at du hjelper til! :-)<br><br>Leif<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Neros</strong> on <strong>December 03, 2016, 07:20:24 AM</strong>
+			</div>
+			<div class="postbody">
+				Hello Leif<br><br>Yea, I also figured that to make things easier (and not invent the deep plate again), I could look at what others have made. That way, I won't have to look through tons of codes to find the name of a label.<br><br>Og det var så lidt :P<br><br>Søren
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Nanazzo</strong> on <strong>February 17, 2017, 07:13:18 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello! I'm an italian motherlanguage, with an optimal knowledge of the english language. Before i read all the stuff written here, i need to clarify some points.<br>A)I would like to help in the translation to italian. It is a lovely game!<br>B)Do you need help with the italian language?<br>C)I have no programming skill whatsoever. Is any of that kind needed?<br>Thanks in advance for the response.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Dotis</strong> on <strong>March 28, 2017, 11:13:33 PM</strong>
+			</div>
+			<div class="postbody">
+				So I'd love to help with this project as I'm having such a great time playing the game. My mother tongue is Chinese, (Mandarin). I would be very interested in helping with the translation so to provide to more of fellow Chinese fans better experiencing the game. <br><br>But before anything I just wanted to make sure that the translation for Mandarin have not started yet by some other contributors. <br><br>Please let me know. If not, I'd love to help.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>mora145</strong> on <strong>April 11, 2017, 10:47:22 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi. <br>I am added to the translation group "Spanish" but my native language is "Latin Spanish". Is it possible to change me?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>I have a problem with translating...</strong><br>
+				Post by: <strong>Exorythm</strong> on <strong>April 17, 2017, 06:02:35 AM</strong>
+			</div>
+			<div class="postbody">
+				Hello,<br>There is a problem with my Rimworld translation. I am working on it, but I don't think I will make it soon. So, there is the problem - it doesn't show the text, it shows a ? in a box.<br>Anyone has solutions how to fix it?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>ei83mon69</strong> on <strong>May 24, 2017, 11:20:15 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello.<br><br>I'm a student living in the Philippines, and I want to help translate this great game to Tagalog (Filipino.)<br>I've already sent an email, and I've yet to receive a reply.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>WentBerzerk</strong> on <strong>June 21, 2017, 07:33:58 AM</strong>
+			</div>
+			<div class="postbody">
+				Hello, I have a couple of questions regarding the files:<br><br><ul class="bbc_list" style="list-style-type: decimal;"><br><li>What does <b><i>Full bars worth of food in storage:</i></b> represent? It's a part of the <i>&lt;LowFoodDesc&gt;</i> tag, so what does it exactly mean?</li><li>Where can I find the date/time related defs?</li><li>Where is <i>grammar.xml</i> used and can I add more grammatical cases?</li><li>Is there a way I can forcefully fire an alert via the debug/dev mode?</li></ul>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>3koozy</strong> on <strong>September 22, 2017, 07:00:13 AM</strong>
+			</div>
+			<div class="postbody">
+				is there any updates on Right to left languages' fix? like Arabic and others..<br>they don't work properly until now!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>prosykito</strong> on <strong>December 26, 2017, 10:10:30 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi all, <br><br>Im&nbsp; working on a translation and I cant find how to change the default Outfits (anything, worker, soldier and nudist) They are on keyed--&gt;Misc_gameplay but dont work. Someone knows about this?<br><br>Thank you.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Arex</strong> on <strong>December 27, 2017, 09:25:42 AM</strong>
+			</div>
+			<div class="postbody">
+				Perhaps you broke the structure of the xml file and the game could not load it. Check the number of opening and closing tags.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>prosykito</strong> on <strong>December 28, 2017, 09:53:26 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Arex on December 27, 2017, 09:25:42 AM</cite><br>Perhaps you broke the structure of the xml file and the game could not load it. Check the number of opening and closing tags.<br></blockquote><br>Not really&nbsp; ;D The file is ok because the rest of translations works well. it refers to them like:&nbsp; <br><br>&nbsp; &lt;OutfitAnything&gt;Cualquiera&lt;/OutfitAnything&gt;<br>&nbsp; &lt;OutfitWorker&gt;Trabajador&lt;/OutfitWorker&gt;<br>&nbsp; &lt;OutfitSoldier&gt;Soldado&lt;/OutfitSoldier&gt;<br>&nbsp; &lt;OutfitNudist&gt;Nudista&lt;/OutfitNudist&gt;<br><br>I've tried to play in other languages and there isn't a translation for this.<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Stoic Saltine</strong> on <strong>February 05, 2018, 05:06:03 AM</strong>
+			</div>
+			<div class="postbody">
+				Does anyone know where to get the official English Backstories.xml, or if it even exists? Doing some work on Backstories for Italian, and it's just absolutely all over the place, and I think some entries might be missing/mislabeled.<br><br>Thanks in advance to anyone who knows! :D
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>NeverPire</strong> on <strong>February 06, 2018, 02:20:05 PM</strong>
+			</div>
+			<div class="postbody">
+				For the French translation, we are used to using this one as reference : https://github.com/RimWorld-zh/RimWorld-English
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: Official translation projects</strong><br>
+				Post by: <strong>Stoic Saltine</strong> on <strong>February 06, 2018, 08:51:56 PM</strong>
+			</div>
+			<div class="postbody">
+				Thanks! :D<br><br>Update: That English repository has become a golden tool for me, oh my goodness. So many things are borked in the Italian translation :(
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>July 15, 2018, 03:45:36 AM</strong>
+			</div>
+			<div class="postbody">
+				I've updated the first post in this thread extensively.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Davetlow</strong> on <strong>August 28, 2018, 11:27:27 PM</strong>
+			</div>
+			<div class="postbody">
+				So, I have to download Github?<br><br>I can't just mention the word<br><br>Pelt (N) - the skin of an animal with the fur, wool, or hair still on it.<br><br>I mean I'm no editor and most stuff doesn't bother me at all, so learning Github...<br><br>Is there a place other than steam I can drop hints, they sent me here from the bugs thread, lol, I just wanted to figure out how to make a tribal headress and only had Bluefur, which is a fine name, but something about it was misleading...&nbsp; what was it.<br><br>Awesome game.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>imbalilang</strong> on <strong>September 05, 2018, 10:47:23 PM</strong>
+			</div>
+			<div class="postbody">
+				I have some translation experience, I want to help translation to Chinese. <br>Though there may be a huge number of Chinese translators.<br>
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>September 06, 2018, 02:56:13 AM</strong>
+			</div>
+			<div class="postbody">
+				Thanks imbalilang, Chinese could definitely use some help.<br><br>Please just follow the instructions in the first post in this thread to get set up.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>TinyRobotsInABox</strong> on <strong>September 06, 2018, 08:45:02 PM</strong>
+			</div>
+			<div class="postbody">
+				I don't suppose you want/need an Urdu translation would you?&nbsp; Probably not many Urdu-speaking customers for the trouble that it'd be
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Demyr</strong> on <strong>September 07, 2018, 03:37:20 PM</strong>
+			</div>
+			<div class="postbody">
+				So I really like translating and I really like RimWorld.<br>Is there any need for help with the French translation? I'm imagining not that much, but I still wanted to ask just in case.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>September 07, 2018, 10:24:58 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Demyr on September 07, 2018, 03:37:20 PM</cite><br>So I really like translating and I really like RimWorld.<br>Is there any need for help with the French translation? I'm imagining not that much, but I still wanted to ask just in case.<br></blockquote><br>Definitely! French just got a bunch of new grammar functionality that needs to be integrated e.g. instead of writing un(e) the game can now resolve un/une based on the gender of what it refers to - but the translations need to be adjusted to make this work. It even works for gendered adjectives like bleu/bleue or beau/belle. Please just follow the steps in the first post of this thread.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>b606</strong> on <strong>September 08, 2018, 07:41:32 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi Demyr,<br>Bienvenu !<br>Take a look at https://github.com/Ludeon/RimWorld-fr once you have access to it.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>lunajive</strong> on <strong>September 16, 2018, 06:55:04 PM</strong>
+			</div>
+			<div class="postbody">
+				Hi,<br>Do you have (Bahasa) Indonesian done yet? I am a professional translator/interpreter. I love the game, and I'd like to help! 
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>andriy</strong> on <strong>October 05, 2018, 06:43:40 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi there!<br><br>Any plans to make collaboration easier? I would recommend Crowdin for the following reasons:<br><br>1) Crowdin is often used for games localization, it can handle any file type and prevents any bugs in translation (e.g. broken tags). Please see public projects: https://crowdin.com/projects#showcases/games<br><br>2) We do have a GitHub integration, it will be easy to setup an agile localization process. Translators will translate and translations will automatically go to GitHub repo (it will be enough to have a single repo, not repo per language);<br><br>3) Since the recent time, we are contacted more and more often by RimWorld community who wish to translate the game using Crowdin (but into the specific language only)<br><br>Let's try setting up a perfect localization flow together, will gladly assist since we're all gamers ourselves in Crowdin :)<br><br>Feel free to contact me directly, I'm looking forward to continue this conversation
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>The_Doctor</strong> on <strong>October 06, 2018, 04:47:02 PM</strong>
+			</div>
+			<div class="postbody">
+				Hi,<br>I was translating the file Credits.xml under the folder Keyed and I stumbled on "Writing donor". What does this mean?<br>Kind Regards,<br>Bas
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>trevorcolby</strong> on <strong>August 07, 2019, 06:35:37 AM</strong>
+			</div>
+			<div class="postbody">
+				What really bothered me but I am not skilled enough to fix it myself: The german translation for "neck" ingame is "Nacken", which is actually the nape and not the throat. Can someone PLEASE fix this to the correct translation of "Hals"? And if it was meant to be the "neck", please change it to "Genick".<br>Thank you!!!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Zomon</strong> on <strong>November 03, 2019, 12:17:54 PM</strong>
+			</div>
+			<div class="postbody">
+				I want to add a new language is that possible?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>November 03, 2019, 08:37:38 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Zomon on November 03, 2019, 12:17:54 PM</cite><br>I want to add a new language is that possible?<br></blockquote><br>Yes. Please email ludeonhelp@gmail.com
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>mfga00</strong> on <strong>February 07, 2020, 05:07:28 PM</strong>
+			</div>
+			<div class="postbody">
+				Hi, I´d love to help with the spanish translation but unfortunately I´m stuck on step 4 lol. Is there something more noob friendly like an excel? Is it possible to just edit my language gamefiles and uploading them?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Oktolone</strong> on <strong>February 26, 2020, 03:28:23 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello, <br>after looking for "notifications" on this forum (translation) without results, I allow myself to post here without knowing if it is the right place. Indeed I noticed a bug in the French translation, the notifications overlap themselves, so I wonder if it is possible to solve this problem by shortening the texts displayed with "..." and see them entirely at mouse over the notification.<br>Here is an example of the bug:<br>https://steamcommunity.com/app/294100/discussions/0/1750149530472230159/
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>February 26, 2020, 07:21:59 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Oktolone on February 26, 2020, 03:28:23 PM</cite><br>Hello, <br>after looking for "notifications" on this forum (translation) without results, I allow myself to post here without knowing if it is the right place. Indeed I noticed a bug in the French translation, the notifications overlap themselves, so I wonder if it is possible to solve this problem by shortening the texts displayed with "..." and see them entirely at mouse over the notification.<br>Here is an example of the bug:<br>https://steamcommunity.com/app/294100/discussions/0/1750149530472230159/<br></blockquote><br>Looks like a bug, we'll look into it thanks.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Oktolone</strong> on <strong>February 26, 2020, 07:55:57 PM</strong>
+			</div>
+			<div class="postbody">
+				Rimworld brings together all that I expect from a game, I still discover things after + 700 hours of play, and the mods deepen it even more! So it's up to me to thank you for your wonderful work and that of the community of course :D
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>melehad</strong> on <strong>March 01, 2020, 05:46:24 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi,<br>the french team needs a definition of "glitterworld" please. I don't know if this is the place to post it. We need a precise description to best translate it into our language.<br>Thanks,
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Philippus</strong> on <strong>March 03, 2020, 02:39:03 PM</strong>
+			</div>
+			<div class="postbody">
+				Hello<br>Please, how can we get the base text of the game updated in English?<br><br>https://git.io/vD8Cj<br><br>Unfortunately this link is no longer updated ...
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>DevEagle</strong> on <strong>March 04, 2020, 10:36:52 AM</strong>
+			</div>
+			<div class="postbody">
+				How to connect the hungarian translate people? Because the 1.1 game is not showing correctly the lot of not translated words, around lot of mod. The 1.0 version correct work with hungarian language with lot of english mods. The 1.1 is showing weird characters lot of english word (#@+&amp;) etc. How to solved this, or full translate the main game is hungary?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Argon111</strong> on <strong>March 11, 2020, 11:17:13 AM</strong>
+			</div>
+			<div class="postbody">
+				buen día tengo un problema, para traducir la descripción del dlc que aparece en la pantalla de inicio, la única forma que encontré fue cambiarle el nombre al juego base(core), ya que en la&nbsp; carpeta de traducción no aparece el apartado para poder traducir la descripción. psdt: con quien debo comunicarme cuanto termine la traduccion del dlc en ESPAÑOL<br>==========================<br>ya lo solucione agregando algo de código
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Solarius Scorch</strong> on <strong>June 21, 2020, 07:54:34 AM</strong>
+			</div>
+			<div class="postbody">
+				Hi Tynan and everyone, first time poster on the forums. This game is literally the best and I can't stop playing it, haven't been this hooked for at least a decade. But I have some things to say about this translation process, which are definitely not malicious in intent, I simply feel that I should speak up about them.<br>I have a few similar projects under my belt, so I wanted to help with PL translation, because it's unfinished and honestly pretty bad at places. However, after familiarizing myself with the process I lost the drive. I am not a complete newb, I made several mods (for other games), I have a GitHub account and maintain several repositories, but still this is black magic to me. Git? Line commands? Last time I saw a command line was when I installed Windows 95 (okay, exaggerating a little, but not by much).<br>This process is clearly aimed at strictly IT people, who - excuse me - rarely have the linguistic competences to make a half-decent translation (though of course some do). That's fine, we all specialize in different areas. But this is just not the right process to produce good translations, as evidenced by reality (both in terms of interest and resulting quality).<br>I really don't understand why we can't use <a href="https://www.transifex.com/">Transifex</a> or some other service which doesn't require haxxor skillz (which are obviously not highly correlated with writing skills). Yes, I could spend time on learning the ropes, given enough time; but I'm not going to spend time on this when I want to contribute in a way I already can. I imagine competent translators in general largely feel the same. I've already bought the game and the expansion, and I want to help with its development for free on top of that, so I expect some minimal effort in facilitating this, not to be treated like a junior employee who needs to learn the company tools.<br>Sorry if this comes as overly harsh, I certainly don't mean any disrespect, but I feel that these things need to be said. It's not about me, I love <i>Rimworld</i> (or more accurately, I'm totally obsessed with it), and I'm 100% fine with not having a localization for it myself. But I honestly think, and I'm speaking from experience with other projects, that the barrier to contribute is way too high, so it discourages people who would be most valuable for writing - not because they're stupid, but because they aren't interested in mastering Git and will choose some other translating project instead.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>TeccnoQ</strong> on <strong>August 03, 2022, 12:18:28 PM</strong>
+			</div>
+			<div class="postbody">
+				<br>For Turkish language translation, I sent a lot of translations related to the beginning and tasks, can you check it? No progress for 2 years.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Tsukisama</strong> on <strong>February 21, 2023, 10:56:36 AM</strong>
+			</div>
+			<div class="postbody">
+				Can I designate specific fonts for Japanese languages?<br>Since both Chinese and Japanese uses Chinese charactars, the designs of some Chinese charactars with same Unicode codes differ in languages, such as 「所」, 「直」, 「戻」, etc. This causes reading difficulties in Japanese language, since Chinese charactars in the default font were meant to used in Chinese language.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Droper13</strong> on <strong>August 19, 2023, 06:55:34 PM</strong>
+			</div>
+			<div class="postbody">
+				Hi, Im placing the hebrew on the languages menu but when im using it its just like english and hebrew have the oposite side how can i change it?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>stewenergy</strong> on <strong>January 09, 2024, 09:58:21 AM</strong>
+			</div>
+			<div class="postbody">
+				Hello everyone, I was trying to follow the instructions to contribute to the italian&nbsp; 🇮🇹&nbsp; translation in the Ludeon server, but I am a little bit confused.<br>Could someone tell me if the italian translation is updated and has a mantainer or is old and the files should be manually placed in the game directory ? <br><br>Thanks
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: How to contribute</strong><br>
+				Post by: <strong>Iguy</strong> on <strong>March 25, 2024, 11:53:09 AM</strong>
+			</div>
+			<div class="postbody">
+				Is it possible for users to create new repositories for translation, or are you only allowed to translate into existing repositories?
+			</div><!-- .postbody -->
+		</div><!-- #posts -->
+	
+</body></html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<link rel="canonical" href="https://ludeon.com/forums/index.php?topic=42587.0">
+		<title>New translation cleaner tool</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="../static/ga4.js"></script>
+	</head>
+	<body>
+		<p>Original topic: <a href="https://ludeon.com/forums/index.php?topic=42587.0">https://ludeon.com/forums/index.php?topic=42587.0</a> | Retrieved November 11, 2026</p>
+		<h1 id="title">Ludeon Forums</h1>
+		<h2 id="linktree">RimWorld =&gt; Mods =&gt; Translations =&gt; Topic started by: Tynan on July 18, 2018, 07:42:06 AM</h2>
+		<div id="posts">
+			<div class="postheader">
+				Title: <strong>New translation cleaner tool</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>July 18, 2018, 07:42:06 AM</strong>
+			</div>
+			<div class="postbody">
+				We just added a tool to the latest unstable build: The translation cleaner.<br><br>You can access it on the main menu in the translation info window on the bottom right, when any non-English localization is selected.<br><br>It does various things:<br><ul class="bbc_list"><br><li>It inserts the English text in comments above each translation for reference, so you don't have to look back and forth at the English data.</li><li>If a translation key has been renamed in the game, the tool automatically renames it in the translation data.</li><li>If any key (in any category) isn't translated at all, the tool inserts a "TODO" translation. These are ignored by the game and also come with English reference text. So it's impossible for you to make a mistake in the translation keys since the system writes them for you.</li><li>Other useful tools!</li></ul><br>The tool explains itself in-game when you click the button to use it.<br><br>Every translation team should be using this! At first if just one member of each team runs the tool and pushes the results to GitHub, most members may be able to translate without the game at all, or at least without integrating their translation files into the game.<br><br>Once you run the tool, it'll be very easy to find missing data by just searching for the string TODO on all the translation files, using either Visual Studio Code or any other program that can do a text search on all files in a folder.<br><br>Let me know how it works!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>July 18, 2018, 12:22:16 PM</strong>
+			</div>
+			<div class="postbody">
+				I've done the german language with it and have to say: this is a great tool!<br>This makes translating much easier. Thank you very much ;D
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Moleculor</strong> on <strong>July 18, 2018, 04:44:39 PM</strong>
+			</div>
+			<div class="postbody">
+				I'm having a hard time finding and selecting <a href="https://github.com/Ludeon/RimWorld-Pirate">this</a> language. 
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>mecatxis</strong> on <strong>July 19, 2018, 03:51:18 AM</strong>
+			</div>
+			<div class="postbody">
+				Yes!<br><br>It is a must have tool! Thank you! I will check it ASAP...
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Tynan</strong> on <strong>July 20, 2018, 10:43:22 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Moleculor on July 18, 2018, 04:44:39 PM</cite><br>I'm having a hard time finding and selecting <a href="https://github.com/Ludeon/RimWorld-Pirate">this</a> language.<br></blockquote><br>It's not included in the main build until it's a bit more fleshed out.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Hellioob</strong> on <strong>July 23, 2018, 07:27:22 AM</strong>
+			</div>
+			<div class="postbody">
+				Someone can help me to update Bulgarian language! https://github.com/Ludeon/RimWorld-Bulgarian<br><br>Can anyone update files and send them to me?<br><br>Thanks in advance!
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Elevator</strong> on <strong>July 30, 2018, 09:51:25 AM</strong>
+			</div>
+			<div class="postbody">
+				Cleaner tool messes up with end-of-line symbols.<br>After line <b><span class="monospace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></b> it places LF instead of CR+LF.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>ison</strong> on <strong>July 30, 2018, 10:10:04 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Elevator on July 30, 2018, 09:51:25 AM</cite><br>Cleaner tool messes up with end-of-line symbols.<br>After line <b><span class="monospace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></b> it places LF instead of CR+LF.<br></blockquote><br>Hmm, maybe it would be better to use LF consistently everywhere instead of using CR+LF here. Would it cause any problems for you? Since such generated file is most likely going to be pushed to a repo, maybe it's better to keep it platform-independant? This way using this tool on both Windows and Linux will give the same files.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>July 30, 2018, 04:28:20 PM</strong>
+			</div>
+			<div class="postbody">
+				In regards to the tool: <a href="https://ludeon.com/forums/index.php?topic=42743.0">this problem</a> is still there in 1.0.1980..
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>ison</strong> on <strong>July 31, 2018, 07:21:36 AM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote from: Haplo on July 30, 2018, 04:28:20 PM</cite><br>In regards to the tool: <a href="https://ludeon.com/forums/index.php?topic=42743.0">this problem</a> is still there in 1.0.1980..<br></blockquote><br>Fixed, thanks, sorry for that.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Haplo</strong> on <strong>July 31, 2018, 03:29:13 PM</strong>
+			</div>
+			<div class="postbody">
+				Thank you very much ;D
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>Elevator</strong> on <strong>August 03, 2018, 06:35:42 PM</strong>
+			</div>
+			<div class="postbody">
+				<blockquote class="bbc_standard_quote"><cite>Quote</cite>Hmm, maybe it would be better to use LF consistently everywhere instead of using CR+LF here</blockquote>I don't think that if Cleanup tool generate LF everywhere it will be a problem. The same is for CR+LF. I believe most translators use advanced text editors that work well with both variants. Editorconfig tool can help with that.
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>publicuser</strong> on <strong>October 03, 2018, 04:35:58 AM</strong>
+			</div>
+			<div class="postbody">
+				Will the tool include in 1.0 stable build, and can it translate mod?
+			</div><!-- .postbody -->
+			<div class="postheader">
+				Title: <strong>Re: New translation cleaner tool</strong><br>
+				Post by: <strong>ison</strong> on <strong>December 06, 2018, 08:57:37 AM</strong>
+			</div>
+			<div class="postbody">
+				Unfortunately it doesn't handle mods.
+			</div><!-- .postbody -->
+		</div><!-- #posts -->
+	
+</body></html>
