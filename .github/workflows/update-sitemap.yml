@@ -1,0 +1,31 @@
+name: update sitemap
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-sitemap:
+    runs-on: windows-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: generate sitemap
+        shell: pwsh
+        run: |
+          Write-Host "Generating sitemap..."
+          npx -y static-sitemap-cli -b "https://rw-t9n.github.io" -m "**/*.htm" -f "txt"
+          Write-Host "Sitemap generation completed."
+
+      - name: commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update sitemap"
+          file_pattern: "sitemap.txt"
