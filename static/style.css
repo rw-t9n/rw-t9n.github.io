@@ -32,11 +32,34 @@ a:hover {
 }
 
 .wh-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   background: #111111;
   border: 1px solid #242424;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 3px;
+}
+
+.wh-header::before,
+.wh-header::after {
+  content: "";
+  flex: 1;
+  max-width: 18rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(191, 196, 202, 0.25), transparent);
+}
+
+.wh-logo-stack {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  max-width: 100%;
+  flex-shrink: 0;
 }
 
 .wh-header h1 {
@@ -50,6 +73,32 @@ a:hover {
   color: #ffd100;
   margin: 0;
   font-size: 12px;
+}
+
+.wh-header-logo {
+  height: 2.4rem;
+  width: auto;
+  display: block;
+}
+
+.wh-translation-sub {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.1;
+
+  background-image: linear-gradient(180deg, #e2e6ec 0%, #b4bac2 52%, #8e959e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.75));
 }
 
 .wh-content {
@@ -78,39 +127,42 @@ a:hover {
 
 .list-row {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 240px 1fr;
   align-items: center;
   padding: 10px 15px;
   border-bottom: 1px solid #222222;
 }
 
-.list-row:last-child {
-  border-bottom: none;
-}
-
-.list-row:nth-child(even) {
-  background-color: #111111;
-}
-
-.list-row:hover {
-  background-color: #191919;
+.list-title {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
 }
 
 .list-row .icon {
-  font-family: "Twemoji Flags", Verdana, sans-serif;
-  font-size: 16px;
-  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
-  text-align: center;
+  height: 16px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  color: #c7c7c7;
 }
 
-.list-row > a {
+.list-row .icon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.list-title a {
   color: #ff8000;
   text-decoration: none;
   font-size: 14px;
 }
 
-.list-view a.q4:hover {
+.list-title a:hover {
   text-decoration: underline;
 }
 
@@ -224,5 +276,14 @@ td::first-letter {
 
   .list-row .description {
     font-size: 12px;
+  }
+
+  .wh-header {
+    gap: 0;
+  }
+
+  .wh-header::before,
+  .wh-header::after {
+    display: none;
   }
 }
